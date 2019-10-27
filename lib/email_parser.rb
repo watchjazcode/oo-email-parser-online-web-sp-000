@@ -14,5 +14,7 @@ class EmailAddressParser
   def parse
     emails.split(/[\,\ ]/).reject{|email| email == ""}.uniq
   end
-  
+  #splitting on , or space in regex
+  #reject gets rid or black entries in Array
+  #uniq removes duplicates
 end
